@@ -38,7 +38,7 @@ bool CollisionDetector::isThisPointCollides(float wx, float wy) {
 
   if (cost > 250)
     ROS_INFO("true");
-    return false;
+    return true;
 
   return false;
 }
