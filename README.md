@@ -15,6 +15,10 @@ Planner is based on RRT* algorithm. It is a global planner for ROS navigation st
 <param name="base_global_planner" value="rrt_star_global_planner/RRTStarPlanner"/>
 ```
 2. Set the parameters in the rrt_star_global_planner_params.yaml file
+3. Add rosparam to the move_base node
+```xml
+<rosparam file="$(find custom_global_planner)/config/rrt_star_params.yaml" command="load"/>
+```
 
 ## Simulation
 
